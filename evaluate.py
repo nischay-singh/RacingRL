@@ -1,4 +1,4 @@
-import argparse, time, imageio, numpy as np, torch
+import argparse, imageio, numpy as np, torch
 from env.wrapper import CarRacingWrapper
 from model import DDQNAgent
 
