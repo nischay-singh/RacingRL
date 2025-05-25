@@ -70,7 +70,7 @@ Training parameters:
 To evaluate a trained model:
 
 ```bash
-python evaluate.py --ckpt checkpoints/ddqn.pt --episodes 1 --record episode.gif
+python evaluate.py --ckpt checkpoints/ddqn.pt --record episode.gif
 ```
 
 Evaluation parameters:
@@ -90,10 +90,10 @@ The DDQN implementation consists of:
 
 2. **Replay Buffer**: Stores and samples transitions for stable learning
    - Maximum size: 100,000 transitions
-   - Batch size: 64
+   - Batch size: 512
 
 3. **Training Parameters**:
-   - Learning rate: 5e-5
+   - Learning rate: 1e-3
    - Discount factor (gamma): 0.99
    - Epsilon decay: 0.999995
    - Minimum epsilon: 0.1
